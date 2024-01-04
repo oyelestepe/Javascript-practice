@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+body {
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    min-height: 40vh;
+    min-width: 15vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    background-color: #7077a17a;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 20px;
+}
+
+.weight-wrap {
+    margin: 10px;
+}
+
+label {
+    margin: 5px;
+    padding: 5px;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+input {
+    min-height: 20px;
+    width: 40%;
+}
+
+.height-wrap {
+    margin: 10px;
+}
+
+.buttons-wrap {
+    padding: 10px;
+    margin: 10px;
+
+}
+
+button {
+    height: 30px;
+    width: 80px;
+    border-radius: 5px;
+    outline: none;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.result {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#message {
+    font-size: 1.2rem;
+}
+
+#bmi-result {
+    font-size: 1.1rem;
+}
