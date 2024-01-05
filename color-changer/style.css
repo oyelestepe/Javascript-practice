@@ -1,0 +1,24 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.container {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+
+.change {
+    position: absolute;
+    top: 35%;
+    left: 45%; 
+    cursor: pointer;
+    height: 30px;
+    width: 160px;
+}
