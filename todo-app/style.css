@@ -1,0 +1,46 @@
+body {
+    font-size: 18px;
+    align-items: center;
+    justify-content: center;
+}
+
+#todo-input {
+    height: 50px;
+    width: 500px;
+    padding: 5px;
+    border-radius: 30px;
+}
+
+#addBtn {
+    height: 50px;
+    width: 120px;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.list-container {
+   max-width: 1000px ;
+}
+
+#todo-ul {
+    list-style-type: none;
+}
+
+
+.todo-li {
+    border: 2px solid black;
+    padding: 10px;
+    margin: 10px;
+    position: relative;
+}
+
+#close {
+    display: flex;
+    justify-content: center;
+    border: 2px solid black;
+    width: 30px;
+    position: absolute;
+    top: 10%;
+    right: 10px;
+    font-weight: bold;
+}
