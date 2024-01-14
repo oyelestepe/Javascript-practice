@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>Rock-Paper-Scissors</title>
+</head>
+<body>
+    <h1>Rock - Paper - Scissors</h1>
+    <div class="container">
+        <div class="person">
+            <!-- <h2>Choose your pick</h2> -->
+            <button class="op" id="rock"><i class="fa-regular fa-hand-back-fist" id="rock" ></i></button>
+            <button class="op" id="paper"><i class="fa-regular fa-hand" id="paper"></i></button>
+            <button class="op" id="scissors"><i class="fa-regular fa-hand-scissors fa-flip-horizontal" id="scissors"></i></button>
+        </div>
+
+        <div class="ai">
+            <!-- <h2>Computer's Choose</h2> -->
+            <button class="pc_op" id="rock">
+                <i class="fa-regular fa-hand-back-fist" id="rock"></i>
+            </button>
+           <button class="pc_op" id="paper">
+            <i class="fa-regular fa-hand" id="paper"></i>
+        </button>
+            <button class="pc_op" id="scissors">
+                <i class="fa-regular fa-hand-scissors" id="scissors"></i>
+            </button>
+        </div>
+    </div>
+
+    <div class="result_div">
+        <h2 >Your Pick : <span id="humansc"></span></h2>
+        <h2 >Computer Pick : <span id="pcsc"></span></h2>
+        <h2>Result: <span id="result"></span></h2>
+        <button id="restart">Restart</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

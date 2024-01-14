@@ -1,0 +1,98 @@
+body {
+    background-color: #f7c88c;
+}
+
+h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 4rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+button {
+    border: none;
+    background-color: #f7c88c;
+    border-radius: 10px;
+    padding: 0;
+    margin: 0;
+}
+
+
+button.active {
+    transform: translateY(-30px);
+    transition: ease 0.5s;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
+}
+
+i {
+    font-size: 4rem;
+    margin: 20px;
+    padding: 40px;
+    border: 4px solid rgb(189, 40, 29);
+    border-radius: 10px;
+    cursor: pointer;
+}
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.person {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    margin-right: 50px;
+}
+
+.ai {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    margin-left: 50px;
+}
+
+.result_div {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#humansc {
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: rgb(189, 40, 29);
+}
+
+#pcsc {
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: rgb(189, 40, 29);
+}
+
+#result {
+    color: rgb(189, 40, 29);
+}
+
+#restart {
+    height: 40px;
+    width: 80px;
+    background-color: gray;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 992px) {
+    .container {
+        flex-wrap: wrap;
+    }
+}
