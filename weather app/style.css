@@ -1,0 +1,41 @@
+.card-body {
+    width: 40vw;
+    height: 60vh;
+    border: 2px solid black;
+}
+
+.search {
+    height: 2rem;
+   padding: 10px;
+}
+
+#cityInput {
+    height: 100%;
+    width: 80%;
+    border-radius: 10px;
+}
+
+button {
+    height: 100%;
+    width: 2.5rem;
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 10px;
+    background-color: transparent;
+    border: none;
+}
+
+i {
+    font-size: 1.2rem;
+}
+
+.text-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#img {
+    height: 150px;
+    width: 150px;
+}
