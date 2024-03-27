@@ -8,20 +8,29 @@
     <title>Document</title>
 </head>
 <body>
-
-    <div class="container">
-        <div class="img-container">
-            <img src="https://picsum.photos/200" alt="photo" id="image">
+    <main>
+        <div class="container">
+            <div class="img-container">
+                <img src="https://picsum.photos/200" alt="photo" id="image">
+            </div>
+            <div class="button-container">
+                <button class="like-button">
+                    <i class="fa-solid fa-heart" id="like-icon"></i>
+                </button>
+                <button id="comment-btn" onclick="comment()">
+                    <i class="fa-regular fa-paper-plane"></i>
+                </button>
+            </div>
+            <div class="comment-container">
+                <input type="text" id="comment-input" placeholder="Add a comment...">
+                <ul class="comment-ul" id="comment-ul">
+                   <!-- created comments goes here -->
+                </ul>
+            </div>
+            <hr>
         </div>
-        <div class="button-container">
-            <button class="like-button">
-                <i class="fa-solid fa-heart" id="like-icon"></i>
-            </button>
-        </div>
-        <div class="comment-container">
-            <input type="text" id="comment-input">
-        </div>
-    </div>
+        
+    </main>
     <script src="app.js"></script>
 </body>
 </html>
