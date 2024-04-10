@@ -1,3 +1,25 @@
+.search-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#input {
+    height: 21px;
+    width: 250px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border: 1.5px solid grey;
+}
+
+#search-btn {
+    height: 25px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    cursor: pointer;
+    border: 1.5px solid grey;
+}
+
 .container {
     display: grid;
     grid-template-columns: repeat(6, 120px);
