@@ -1,7 +1,17 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #dce0d9;
+    height: 100vh;
+}
 .card-body {
-    width: 40vw;
+    padding: 20px;
+    border-radius: 20px;
+    min-width: 400px;
     height: 60vh;
-    border: 2px solid black;
+    background: rgb(251,246,239);
+    background: linear-gradient(180deg, rgba(251,246,239,1) 0%, rgba(249,223,178,1) 24%, rgba(242,219,186,1) 54%, rgba(234,215,195,1) 83%);
 }
 
 .search {
@@ -21,15 +31,16 @@ button {
     padding: 5px;
     cursor: pointer;
     border-radius: 10px;
-    background-color: transparent;
+    background-color: #bbad9e;
     border: none;
 }
 
 i {
     font-size: 1.2rem;
+    color: #fbf6ef;
 }
 
-.text-body {
+.info {
     display: flex;
     flex-direction: column;
     align-items: center;
