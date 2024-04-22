@@ -1,0 +1,32 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+
+.question {
+    min-width: 800px;
+    max-width: 800px;
+    margin-bottom: 10px;
+    border: 2px solid black;
+    padding: 10px;
+    cursor: pointer;
+}
+  
+.question-container {
+    display: flex;
+    justify-content: space-between;
+}
+  
+.answer {
+    font-size: 18px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out; 
+}
+  
+.answer.show {
+    max-height: 1000px;
+}
+  
