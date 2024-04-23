@@ -20,7 +20,6 @@ async function getData(){
     let movieName = input.value
     let apiURL = `http://www.omdbapi.com/?t=${movieName}&apikey=${key}`
    
-    
     if(movieName.length <= 0){
         container.innerHTML = "<h3>Please enter a movie name</h3>";
     } else {
@@ -32,15 +31,12 @@ async function getData(){
                 <img src="${response.Poster}" id="poster-img">
             </div>
             <h1 id="title">${response.Title}</h1> 
-            <h1 id="title">${response.Title}</h1>
             <h3 id="genre">${response.Genre}</h3>
-            <h4 id="actors">${response.Actors}</h4>
-            <h3 id="rating">${response.imdbRating}</h3>
-            <h3 id="director">${response.Director}</h3>
-            <p id="plot">${response.Plot}</p>
-            <h5 id="runtime">${response.Runtime}</h5>
-            <h4 id="type">${response.Type}</h4>
-            <h5 id="rated">${response.Rated}</h5>
+            <h4 id="actors">Cast : ${response.Actors}</h4>
+            <h3 id="rating">${response.imdbRating}<i class="fa-solid fa-star"></i></h3>
+            <h3 id="director">Director : ${response.Director}</h3>
+            <p id="plot">Plot : ${response.Plot}</p>
+            <h5 id="runtime"><i class="fa-solid fa-clock"></i>${response.Runtime}</h5>
             `
         } else {
             container.innerHTML = `<h3>${response.Error} </h3>`
