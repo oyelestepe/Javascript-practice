@@ -1,5 +1,5 @@
 const btn = document.getElementById('btn');
-const word = document.getElementById('word');
+const passwordEl = document.getElementById('password');
 const input = document.getElementById('input');
 const lowerLetters = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"];
 const numbers = ["0","1","2","3","4","5","6","7","8","9"];
@@ -19,7 +19,7 @@ btn.addEventListener('click', () => {
             password += all[Math.floor(Math.random() * all.length)]
         }
     } 
-    word.innerText = `Password : ${password}`
+    passwordEl.innerText = `Password : ${password}`
 });
 
 
