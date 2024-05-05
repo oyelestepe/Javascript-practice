@@ -1,40 +1,87 @@
 body {
-    background: rgb(231,58,58);
-    background: linear-gradient(270deg, rgba(231,58,58,1) 18%, rgba(177,47,123,1) 54%, rgba(131,58,180,1) 93%);
+    font-family: Arial, sans-serif;
+    background-color: #554d4d;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 
 .form-wrapper {
-    height: 500px;
-    max-width: 450px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    border-radius: 10px;
-    background: white;
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 350px;
 }
 
 #title {
-    margin: 0;
+    margin-top: 0;
 }
 
-input {
-    height: 30px;
-    width: 80%;
-    margin: 20px;
-    border: none;
-    border-bottom: 2px solid rgb(148, 148, 148);
-}
-
-.btn {
-    margin: 20px;
+span i {
     cursor: pointer;
-    height: 40px;
-    width: 40%;
-    border-radius: 10px;
+}
+
+input[type="text"],
+input[type="password"],
+button {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #4c90af;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #3e738b;
 }
 
 .disabled {
-    opacity: 0.5;
+    background-color: #aaa;
     cursor: not-allowed;
+}
+
+button i {
+    font-size: 1.5rem;
+}
+
+#info {
+    margin-top: 10px;
+}
+.password-wrapper {
+    position: relative;
+}
+
+.password-wrapper input[type="password"] {
+    padding-right: 40px; 
+}
+
+.password-wrapper i {
+    position: absolute;
+    right: 10px; 
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.remember {
+    display: flex;
+    justify-content: space-between;
+}
+
+#checkbox {
+    accent-color: #9b59b6;
+    cursor: pointer;
 }
